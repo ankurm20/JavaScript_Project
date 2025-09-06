@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Changer</title>
+      <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+            transition: background-color 0.3s ease;
+        }
+
+        .canvas h1 {
+            margin-bottom: 20px;
+        }
+
+        .button {
+            display: inline-block;
+            width: 60px;
+            height: 60px;
+            margin: 10px;
+            border-radius: 10px;
+            cursor: pointer;
+            border: 2px solid #333;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        /* Individual colors */
+        #gray { background-color: gray; }
+        #white { background-color: white; border: 2px solid #ccc; }
+        #blue { background-color: blue; }
+        #yellow { background-color: yellow; }
+
+       
+    </style>
+</head>
+<body>
+    <div class="canvas">
+    <h1>Color Scheme Switcher</h1>
+    <span class="button" id="gray"></span>
+    <span class="button" id="white"></span>
+    <span class="button" id="blue"></span>
+    <span class="button" id="yellow"></span>
+    <h2>Try clicking one by one colors above</h2>
+    <span>to change the background color of this page</span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
